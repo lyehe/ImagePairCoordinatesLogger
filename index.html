@@ -19,16 +19,18 @@
 
 
     <div id="image1Container" class="imageContainer">
-        <img id="image1" class="image">
-        <p id="cursorPosition1" class="cursorPosition"></p>
+        <img id="image1" class="image" onload="drawGrid('image1');">
+        <canvas id="image1Canvas" class="imageCanvas" width="0" height="0"></canvas>
+        <p id="cursorPosition1" class="cursorPosition">XY coordinates</p>
     </div>
-
     <div id="image2Container" class="imageContainer">
-        <img id="image2" class="image">
-        <p id="cursorPosition2" class="cursorPosition"></p>
+        <img id="image2" class="image" onload="drawGrid('image2');">
+        <canvas id="image2Canvas" class="imageCanvas" width="0" height="0"></canvas>
+        <p id="cursorPosition2" class="cursorPosition">XY coordinates</p>
     </div>
     <br>
-    
+
+
     <input type="file" id="imageLoader1" name="imageLoader1" />
     <br>
     <input type="file" id="imageLoader2" name="imageLoader2" />
