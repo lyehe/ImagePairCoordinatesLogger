@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: left;
+}
+
+input[type="file"] {
+  display: inline-block;
+}
+
+/* Optionally style the file input text */
+input[type="file"] {
+  content: "Select File";
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  background-color: darkgray; /* Change to your desired hover color */
+}
+
+/* Hide the default file input text */
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+.imageContainer {
+  width: 45%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgray;
+}
+
+.cursorPosition {
+  margin: 10px;
+  color: #333;
+}
+
+.point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border-color:black;
+  transform: translate(-50%, -50%); /* this centers the point at the clicked location */
+  z-index: 10;
+}

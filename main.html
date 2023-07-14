@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dual image Coordinate Logger for Non-Rigid Registration</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Dual image Coordinate Logger </h1>
+    <h2>for non-rigid registration</h2>
+    <p>Instructions: <br>
+        1. Upload two images <br>
+        2. Click on the images to log coordinates <br>
+        3. Click on the "Export as csv" button to download the coordinates as a csv file <br>
+        4. Click on the "Undo the last click" button to undo the last click <br>
+
+    <input type="file" id="imageLoader1" name="imageLoader1" />
+    <br>
+    <input type="file" id="imageLoader2" name="imageLoader2" />
+    <br>
+
+    <div id="image1Container" class="imageContainer">
+        <img id="image1" class="image">
+        <p id="cursorPosition1" class="cursorPosition"></p>
+    </div>
+
+    <div id="image2Container" class="imageContainer">
+        <img id="image2" class="image">
+        <p id="cursorPosition2" class="cursorPosition"></p>
+    </div>
+    <br>
+
+    <button id="undoButton">Undo the last click</button>
+    <br>
+    <button id="clearButton">Clear all points</button>
+    <br>
+    <button id="saveButton">Export as csv</button>
+    <br>
+
+    <p>Coordinate List 1: <br></p>
+    <div id="coordinatesList1"></div>
+    <p>Coordinate List 2: <br></p>
+    <div id="coordinatesList2"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
