@@ -11,7 +11,7 @@
 <body>
     <h1>Image Pair Coordinates Logger </h1>
     <h2>for non-rigid registration</h2>
-    <p>Instructions: <br>
+    <p><b>Instructions:</b> <br>
         1. Upload two images <br>
         2. Click on the images to log coordinates <br>
         3. Click on the "Undo the last click" button to undo the last click <br>
@@ -23,19 +23,20 @@
         <img id="image1" class="image" onload="drawGrid('image1');">
         <canvas id="image1Canvas" class="imageCanvas" width="0" height="0"></canvas>
         <p id="cursorPosition1" class="cursorPosition">XY coordinates</p>
+        <label for="imageLoader1">Choose Image 1: </label>
+        <input type="file" id="imageLoader1" name="imageLoader1" />
     </div>
     <div id="image2Container" class="imageContainer">
         <img id="image2" class="image" onload="drawGrid('image2');">
         <canvas id="image2Canvas" class="imageCanvas" width="0" height="0"></canvas>
         <p id="cursorPosition2" class="cursorPosition">XY coordinates</p>
+        <label for="imageLoader2">Choose Image 2: </label>
+        <input type="file" id="imageLoader2" name="imageLoader2" />
     </div>
     <br>
 
-    <label for="imageLoader1">Choose Image 1:</label>
-    <input type="file" id="imageLoader1" name="imageLoader1" />
-    <label for="imageLoader2">Choose Image 2:</label>
-    <input type="file" id="imageLoader2" name="imageLoader2" />
-    <br>
+
+
 
     <button id="undoButton">Undo the last click</button>
     <br>
@@ -44,9 +45,9 @@
     <button id="saveButton">Export as csv</button>
     <br>
 
-    <p>Coordinate List 1: <br></p>
+    <p><b>Coordinate List 1: </b><br></p>
     <div id="coordinatesList1"></div>
-    <p>Coordinate List 2: <br></p>
+    <p><b>Coordinate List 2: </b><br></p>
     <div id="coordinatesList2"></div>
 
 

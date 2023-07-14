@@ -13,11 +13,13 @@ input[type="file"] {
 /* Optionally style the file input text */
 input[type="file"] {
   content: "Select File";
+  width: 200px;
   display: inline-block;
   margin: 10px auto;
   padding: 10px 20px;
   background-color: gray;
   color: white;
+  text-align-last: center;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -46,6 +48,7 @@ input[type="file"]::-webkit-file-upload-button {
 
 button {
   display: inline-block;
+  width: 200px;
   margin: 10px auto;
   padding: 10px 20px;
   background-color: gray;
