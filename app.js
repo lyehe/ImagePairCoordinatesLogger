@@ -72,8 +72,8 @@ function displayPoint(imageId, x, y) {
     // Set the color of the label to match the point
     label.style.color = pointColor;
     // Set unique IDs for the point and label
-    point.id = `point${imageId.charAt(5)}${pointNumber}`;
-    label.id = `label${imageId.charAt(5)}${pointNumber}`;
+    point.id = `point${imageId.charAt(5)}_${pointNumber}`;
+    label.id = `label${imageId.charAt(5)}_${pointNumber}`;
     // Append the point and the label to the container
     let container = document.getElementById(imageId.slice(0, 6) + "Container");
     container.appendChild(point);
